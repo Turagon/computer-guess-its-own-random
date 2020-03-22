@@ -4,7 +4,7 @@ print("The random number is ", num)
 g_num = r.randint(1,100)
 n = 1
 if g_num == num :
-    print("Congratulations")
+    print("Congratulations! Hole in one!!!")
 
 
 while True :   
@@ -21,9 +21,11 @@ while True :
             g_num = r.randint(g_num, g_num1)
         elif g_num1 < num :
             g_num = r.randint(g_num1, 100)
+    n = n + 1
             
     if g_num == num :
         print("Congratulations ! The computer guess number is", g_num)
+        print("The computer tried ", n, " times")
         break
    
     
